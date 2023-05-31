@@ -13,4 +13,4 @@ A flexible and decoupled approach for managing dependencies in TypeScript applic
 
 ## Documentation:
 
-Refer to the [documentation](DOCUMENATION.md "documentation") for implementation details, examples, and instructions on how to use the service locator pattern in your TypeScript projects.
+Refer to the [documentation](DOCUMENTATION.md "documentation") for implementation details, examples, and instructions on how to use the service locator pattern in your TypeScript projects.
