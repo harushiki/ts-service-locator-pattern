@@ -27,8 +27,9 @@ Initialize a new npm project by running the following command and following the 
 
 ```shell
 npm init
-Install the required dependencies by executing the following command:
 ```
+
+Install the required dependencies by executing the following command:
 
 ```shell
 npm install --save-dev mocha ts-node chai @types/chai
@@ -160,15 +161,15 @@ In this example, the NotificationService depends on both EmailService and Logger
 
 To run tests using Mocha as the test environment, follow these steps:
 
-Create a test file (e.g., emailService.test.ts) to write your Mocha test cases.
+1. Create a test file (e.g., emailService.test.ts) to write your Mocha test cases.
 
-Install the necessary testing dependencies by executing the following command:
+2. Install the necessary testing dependencies by executing the following command:
 
 ```shell
 npm install --save-dev mocha ts-node chai @types/chai
 ```
 
-Configure Mocha in your package.json file by adding the following script:
+3. Configure Mocha in your package.json file by adding the following script:
 
 ```json
 "scripts": {
@@ -176,9 +177,9 @@ Configure Mocha in your package.json file by adding the following script:
 }
 ```
 
-Write your Mocha test cases in the test file. Use the service locator to resolve the dependencies and perform the required assertions.
+4. Write your Mocha test cases in the test file. Use the service locator to resolve the dependencies and perform the required assertions.
 
-Run the tests by executing the following command:
+5. Run the tests by executing the following command:
 
 ```shell
 npm test
