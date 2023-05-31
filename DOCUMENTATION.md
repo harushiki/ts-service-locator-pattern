@@ -179,7 +179,7 @@ describe("EmailService", () => {
 });
 ```
 
-2. Open your package.json file and update the scripts section to include a new script for running tests with Mocha:
+3. Open your package.json file and update the scripts section to include a new script for running tests with Mocha:
 
 ```json
 "scripts": {
@@ -187,9 +187,9 @@ describe("EmailService", () => {
 }
 ```
 
-3. Open a terminal and navigate to your project's root directory.
+4. Open a terminal and navigate to your project's root directory.
 
-4. Run the following command to execute your tests:
+5. Run the following command to execute your tests:
 
 ```shell
 npm test
