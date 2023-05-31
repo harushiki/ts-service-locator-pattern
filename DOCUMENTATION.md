@@ -163,13 +163,23 @@ To run tests using Mocha as the test environment, follow these steps:
 
 1. Create a test file (e.g., emailService.test.ts) to write your Mocha test cases.
 
-2. Install the necessary testing dependencies by executing the following command:
+2. Write your Mocha test cases in the test file, using the describe and it functions provided by Mocha. Use the service locator to resolve the dependencies and perform the required assertions.
 
-```shell
-npm install --save-dev mocha ts-node chai @types/chai
+```typescript
+import { expect } from "chai";
+import { ServiceLocator } from "./path/to/serviceLocator";
+
+describe("EmailService", () => {
+    it("should send an email", () => {
+        const emailService =
+            ServiceLocator.resolve<EmailService>("EmailService");
+        // Perform assertions or test the behavior of the email service
+        expect(/* assertion */).to.be.true;
+    });
+});
 ```
 
-3. Configure Mocha in your package.json file by adding the following script:
+2. Open your package.json file and update the scripts section to include a new script for running tests with Mocha:
 
 ```json
 "scripts": {
@@ -177,9 +187,9 @@ npm install --save-dev mocha ts-node chai @types/chai
 }
 ```
 
-4. Write your Mocha test cases in the test file. Use the service locator to resolve the dependencies and perform the required assertions.
+3. Open a terminal and navigate to your project's root directory.
 
-5. Run the tests by executing the following command:
+4. Run the following command to execute your tests:
 
 ```shell
 npm test
